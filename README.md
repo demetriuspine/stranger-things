@@ -40,17 +40,17 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
   - [Desenvolvimento](#desenvolvimento-1)
   - [Dicas](#dicas)
 - [Requisitos do projeto](#requisitos-do-projeto)
-    - [Backend](#backend-2)
-      - [1 - Verifica as variáveis de ambiente](#1---verifica-as-variáveis-de-ambiente)
-      - [2 - Verifica se o arquivo Dockerfile está configurado da maneira correta](#2---verifica-se-o-arquivo-dockerfile-está-configurado-da-maneira-correta)
-      - [3 - Verifica se o arquivo heroku.yml está configurado na maneira correta](#3---verifica-se-o-arquivo-herokuyml-está-configurado-na-maneira-correta)
-      - [4 - Verifica action de Linter para ser executada no GitHub](#4---verifica-action-de-linter-para-ser-executada-no-github)
-      - [5 - Verifica o Deploy no Heroku](#5---verifica-o-deploy-no-heroku)
-    - [Frontend](#frontend-2)
-      - [6 - Verifica as variáveis de ambiente do frontend](#6---verifica-as-variáveis-de-ambiente-do-frontend)
-      - [7 - Verifica se foi feito o deploy do frontend no Heroku](#7---verifica-se-foi-feito-o-deploy-do-frontend-no-heroku)
-    - [Bônus](#bônus)
-      - [8 - Verifica os multi-ambientes e modo de desenvolvimento.](#8---verifica-os-multi-ambientes-e-modo-de-desenvolvimento)
+  - [Backend](#backend-2)
+    - [1 - Verifica as variáveis de ambiente](#1---verifica-as-variáveis-de-ambiente)
+    - [2 - Verifica se o arquivo Dockerfile está configurado da maneira correta](#2---verifica-se-o-arquivo-dockerfile-está-configurado-da-maneira-correta)
+    - [3 - Verifica se o arquivo heroku.yml está configurado na maneira correta](#3---verifica-se-o-arquivo-herokuyml-está-configurado-na-maneira-correta)
+    - [4 - Verifica action de Linter para ser executada no GitHub](#4---verifica-action-de-linter-para-ser-executada-no-github)
+    - [5 - Verifica o Deploy no Heroku](#5---verifica-o-deploy-no-heroku)
+  - [Frontend](#frontend-2)
+    - [6 - Verifica as variáveis de ambiente do frontend](#6---verifica-as-variáveis-de-ambiente-do-frontend)
+    - [7 - Verifica se foi feito o deploy do frontend no Heroku](#7---verifica-se-foi-feito-o-deploy-do-frontend-no-heroku)
+  - [Bônus](#bônus)
+    - [8 - Verifica os multi-ambientes e modo de desenvolvimento.](#8---verifica-os-multi-ambientes-e-modo-de-desenvolvimento)
 - [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento-1)
 - [Revisando um pull request](#revisando-um-pull-request-1)
 - [Avisos Finais](#avisos-finais)
@@ -58,9 +58,10 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 # Habilidades
 
 Nesse projeto, você será capaz de:
-  - Adaptar e configurar o `Heroku`;
-  - Publicar aplicações com `Docker` através do `Heroku`;
-  - Utilizar variáveis de ambiente dentro do `Heroku`;
+
+- Adaptar e configurar o `Heroku`;
+- Publicar aplicações com `Docker` através do `Heroku`;
+- Utilizar variáveis de ambiente dentro do `Heroku`;
 
 # Entregáveis
 
@@ -76,16 +77,16 @@ Lembre-se que você pode consultar nosso conteúdo sobre [Git & GitHub](https://
 
 ## O que deverá ser desenvolvido
 
-Você vai adaptar e configurar os projetos descritos nesse README para que seja feito o deploy deles. Você vai colocar os projetos frontend e backend no ar com o `Heroku`, utilizando o `Docker` em ambiente de produção. Além disso, você vai alterar alguns comportamentos aplicando os conceitos vistos no conteúdo. 
+Você vai adaptar e configurar os projetos descritos nesse README para que seja feito o deploy deles. Você vai colocar os projetos frontend e backend no ar com o `Heroku`, utilizando o `Docker` em ambiente de produção. Além disso, você vai alterar alguns comportamentos aplicando os conceitos vistos no conteúdo.
 
 ## Desenvolvimento
 
-Adapte e configure os projetos descritos nesse *README* para que seja feito o deploy utilizando `Docker` por meio do `Heroku`.
+Adapte e configure os projetos descritos nesse _README_ para que seja feito o deploy utilizando `Docker` por meio do `Heroku`.
 
 ## Data de entrega
 
-  - Será 1 dia de projeto.
-  - Data de entrega para avaliação final do projeto: `18/02/2022 - 14:00h`.
+- Será 1 dia de projeto.
+- Data de entrega para avaliação final do projeto: `18/02/2022 - 14:00h`.
 
 # Instruções para entregar seu projeto:
 
@@ -120,37 +121,37 @@ Adapte e configure os projetos descritos nesse *README* para que seja feito o de
   - Exemplo:
     - `git checkout -b joaozinho-sd-014-b-stranger-things-backend`
     - `git checkout -b joaozinho-sd-014-b-stranger-things-frontend`
-    
+
 5. Adicione a sua branch com o novo `commit` ao repositório remoto
 
-  - Usando o exemplo anterior:
-    - `git push -u origin joaozinho-sd-014-b-stranger-things-backend`
-    - `git push -u origin joaozinho-sd-014-b-stranger-things-frontend`
+- Usando o exemplo anterior:
+  - `git push -u origin joaozinho-sd-014-b-stranger-things-backend`
+  - `git push -u origin joaozinho-sd-014-b-stranger-things-frontend`
 
 6. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ dos repositórios no GitHub: [Backend](https://github.com/tryber/sd-014-b-stranger-things-backend/pulls) | [Frontend](https://github.com/tryber/sd-014-b-stranger-things-frontend/pulls)
-  * Clique no botão verde _"New pull request"_
-  * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
-  * Clique no botão verde _"Create pull request"_
-  * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
-  * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-014-b-stranger-things-backend/pulls) e confira que o seu _Pull Request_ está criado
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-014-b-stranger-things-frontend/pulls) e confira que o seu _Pull Request_ está criado
 
-* ⚠ **Observação: Os PRs não devem ser abertos neste repositório, apenas nos outros dois repositórios.** ⚠
+- Vá até a página de _Pull Requests_ dos repositórios no GitHub: [Backend](https://github.com/tryber/sd-014-b-stranger-things-backend/pulls) | [Frontend](https://github.com/tryber/sd-014-b-stranger-things-frontend/pulls)
+- Clique no botão verde _"New pull request"_
+- Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
+- Clique no botão verde _"Create pull request"_
+- Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
+- **Não se preocupe em preencher mais nada por enquanto!**
+- Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-014-b-stranger-things-backend/pulls) e confira que o seu _Pull Request_ está criado
+- Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-014-b-stranger-things-frontend/pulls) e confira que o seu _Pull Request_ está criado
 
+- ⚠ **Observação: Os PRs não devem ser abertos neste repositório, apenas nos outros dois repositórios.** ⚠
 
 ---
 
 ## Durante o desenvolvimento
 
-* ⚠ **PULL REQUESTS COM ISSUES NO LINTER NÃO SERÃO AVALIADAS, ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠
+- ⚠ **PULL REQUESTS COM ISSUES NO LINTER NÃO SERÃO AVALIADAS, ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠
 
-* Faça `commits` das alterações que você fizer no código regularmente
+- Faça `commits` das alterações que você fizer no código regularmente
 
-* Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
+- Lembre-se de sempre após um (ou alguns) `commits` atualizar o repositório remoto
 
-* Os comandos que você utilizará com mais frequência são:
+- Os comandos que você utilizará com mais frequência são:
   1. `git status` _(para verificar o que está em vermelho - fora do stage - e o que está em verde - no stage)_
   2. `git add` _(para adicionar arquivos ao stage do Git)_
   3. `git commit` _(para criar um commit com os arquivos que estão no stage do Git)_
@@ -163,10 +164,10 @@ Adapte e configure os projetos descritos nesse *README* para que seja feito o de
 
 Para **"entregar"** seu projeto, siga os passos a seguir:
 
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-014-b`
+- Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque seus colegas
+  - No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**
+  - No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**
+  - No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-014-b`
 
 Se ainda houver alguma dúvida sobre como entregar seu projeto, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
@@ -190,8 +191,7 @@ Para garantir a qualidade do código, vamos utilizar neste projeto o linter ESLi
 Assim o código estará alinhado com as boas práticas de desenvolvimento, sendo mais legível
 e de fácil manutenção! Para roda-los localmente no projeto, execute o comando abaixo:
 
-  - `npm run lint`
-
+- `npm run lint`
 
 ⚠️ **PULL REQUESTS COM ISSUES DE LINTER NÃO SERÃO AVALIADAS.
 ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠️
@@ -207,7 +207,6 @@ Todos os requisitos do projeto serão testados **automaticamente** por meio do `
 ```bash
 npm test
 ```
-
 
 ### Frontend
 
@@ -375,12 +374,12 @@ Esses parâmetros estão pré-programados de maneira fixa no componente (alterar
 
 ```javascript
 const strangerThingsConfig = {
-  url: 'localhost:3002',
+  url: "localhost:3002",
   timeout: 30000,
 };
 
 const upsideDownConfig = {
-  url: 'localhost:3003',
+  url: "localhost:3003",
   timeout: 30000,
 };
 
@@ -414,13 +413,11 @@ Todos esses passos estão detalhados nos requisitos abaixos.
 
 ---
 
-
 ## Dicas
 
 Para publicar seu frontend React, utilize o buildpack [mars/create-react-app](https://elements.Heroku.com/buildpacks/mars/create-react-app-buildpack).
 
 Lembre-se de que é possível testar o comportamento definindo as variáveis de ambiente em sua máquina. Você pode fazê-las apontar tanto para o backend rodando localmente em sua máquina, quanto para as APIs já publicadas nos requisitos anteriores.
-
 
 ⚠️ **Dica: Lembre-se que ao importar uma variável de ambiente com `process.env.nomeDaVariavel`, seu tipo é `string`.** ⚠️
 
@@ -438,13 +435,14 @@ Os requisitos estão agrupados por `frontend` e `backend`. Realize as alteraçõ
 
 Altere o backend para utilizar variáveis de ambiente para controlar os seguintes comportamentos:
 
-   1. A porta que a API escutará, essa variável deve ter, nescessariamente, o nome PORT e o seu valor deve ser 3000.
+1.  A porta que a API escutará, essa variável deve ter, nescessariamente, o nome PORT e o seu valor deve ser 3000.
 
-   2. O modo "upsideDown". Essa variável espera um valor boleano e deverá se chamar UPSIDEDOWN_MODE. Lembre-se que as variáveis de ambiente são `strings`.
+2.  O modo "upsideDown". Essa variável espera um valor boleano e deverá se chamar UPSIDEDOWN_MODE. Lembre-se que as variáveis de ambiente são `strings`.
 
-   O que será testado:
-   - Se existe a variável de ambiente PORT.
-   - Se a variável de ambiente UPSIDEDOWN_MODE existe e se ela é um boleano.
+O que será testado:
+
+- Se existe a variável de ambiente PORT.
+- Se a variável de ambiente UPSIDEDOWN_MODE existe e se ela é um boleano.
 
 **Importante**: Para esse projeto, as variáveis de ambiente devem ser definidas em um arquivo .env e o arquivo deve ser enviando no seu PR(Pull Request). ISSO NÃO É UMA PRÁTICA DE MERCADO, o arquivo .env deve ser sempre incluido no .gitignore pois contém informações sensíveis, aqui será enviado apenas por motivo de avaliação.
 
@@ -452,23 +450,25 @@ Altere o backend para utilizar variáveis de ambiente para controlar os seguinte
 
 O teste irá verificar se o arquivo `Dockerfile` existe e está configurado da maneira correta. Ele deve construir a imagem a partir da `node:14-alpine` e usar o comando `npm start` para iniciar a aplicação via `CMD`.
 
-  O que será testado:
-  - Se a Dockerfile está utilizando a imagem `node:14-alpine`, verificando se as camadas desta imagem estão incluídas no build que essa Dockerfile faz.
-  - Se a Dockerfile usa `npm start` como `CMD`.
+O que será testado:
+
+- Se a Dockerfile está utilizando a imagem `node:14-alpine`, verificando se as camadas desta imagem estão incluídas no build que essa Dockerfile faz.
+- Se a Dockerfile usa `npm start` como `CMD`.
 
 #### 3 - Verifica se o arquivo heroku.yml está configurado na maneira correta
 
 Adicione e configure o arquivo `heroku.yml`
 
-  1. O arquivo deve iniciar um servidor do tipo `web`
-  2. O `run` deve executar o servidor utilizando o `node`.
+1. O arquivo deve iniciar um servidor do tipo `web`
+2. O `run` deve executar o servidor utilizando o `node`.
 
 Execute ambos em sua máquina para validar se o comportamento é o esperado.
 
 O que será testado:
-  - Se o arquivo `heroku.yml` existe.
-  - Se o serviço a ser executado é um serviço do tipo `web`.
-  - Se o `node` é responsável por executar o servidor.
+
+- Se o arquivo `heroku.yml` existe.
+- Se o serviço a ser executado é um serviço do tipo `web`.
+- Se o `node` é responsável por executar o servidor.
 
 #### 4 - Verifica action de Linter para ser executada no GitHub
 
@@ -477,6 +477,7 @@ Você deverá criar uma `Action` para ser executada somente em **pull_requests**
 **Atenção**: O arquivo de configuração da action deverá ser criado em: `./actions/` com o nome `project.yml`.
 
 O que será testado:
+
 - Se o arquivo `./actions/project.yml` existe.
 - Se a `Action` é acionada somente em `pull_request`.
 - Se o job foi nomeado como: `eslint`.
@@ -508,8 +509,9 @@ Acesse os URLs geradas e valide se ambas as API's estão no ar e funcionando com
 **Importante**: As URLs deverão ser geradas pelo Heroku e não devem ser modificadas.
 
 O que será testado:
-  - Se ao fazer uma requisição do tipo GET para o endpoint da API hawkins serão retornadas as informações corretas.
-  - Se ao fazer uma requisição do tipo GET para o endpoint da API upside-down serão retornadas as informações corretas.
+
+- Se ao fazer uma requisição do tipo GET para o endpoint da API hawkins serão retornadas as informações corretas.
+- Se ao fazer uma requisição do tipo GET para o endpoint da API upside-down serão retornadas as informações corretas.
 
 ### Frontend
 
@@ -522,6 +524,7 @@ Perceba que o código está esperando por duas **APIs**. Uma para o modo `upside
 O nome das variáveis deve ser o seguinte:
 
 - Para seu back-end hawkins:
+
   - REACT_APP_HAWKINS_URL para a URL;
   - REACT_APP_HAWKINS_TIMEOUT para o timeout;
 
@@ -530,6 +533,7 @@ O nome das variáveis deve ser o seguinte:
   - REACT_APP_UPSIDEDOWN_TIMEOUT para o timeout;
 
 O que será testado:
+
 - Se existem as 4 variáveis de ambiente citadas acima.
 
 **Importante**: Para esse projeto, as variáveis de ambiente devem ser definidas em um arquivo .env e o arquivo deve ser enviando no seu PR(Pull Request). ISSO NÃO É UMA PRÁTICA DE MERCADO, o arquivo .env deve ser sempre incluido no .gitignore pois contém informações sensíveis, aqui será enviado apenas por motivo de avaliação.
@@ -540,13 +544,13 @@ O que será testado:
 
 Faça o deploy do front-end:
 
-   1. Crie um app do Heroku com o front-end. Vamos deixar o Heroku utilizar as configurações padrões. No momento de criar o app do Heroku, utilize o `buildpack` descrito abaixo, em **Dicas**.
+1.  Crie um app do Heroku com o front-end. Vamos deixar o Heroku utilizar as configurações padrões. No momento de criar o app do Heroku, utilize o `buildpack` descrito abaixo, em **Dicas**.
 
-   2. O nome do seu app no Heroku deve ser seu nome de usuário do GitHub seguido de "-ft". Por exemplo, se o seu usuário do GitHub for "student", o nome do seu app será "student-ft" e a URL ***precisar ser*** https://student-ft.Herokuapp.com/.
+2.  O nome do seu app no Heroku deve ser seu nome de usuário do GitHub seguido de "-ft". Por exemplo, se o seu usuário do GitHub for "student", o nome do seu app será "student-ft" e a URL **_precisar ser_** https://student-ft.Herokuapp.com/.
 
-   2. Configure as variáveis de ambiente do app para apontar para as API's publicadas.
+3.  Configure as variáveis de ambiente do app para apontar para as API's publicadas.
 
-   3. Faça o deploy com o git.
+4.  Faça o deploy com o git.
 
 **Dicas**:
 
@@ -555,10 +559,11 @@ Para publicar seu frontend React, utilize o buildpack [mars/create-react-app](ht
 Lembre-se de que é possível testar o comportamento definindo as variáveis de ambiente em sua máquina. Você pode fazê-las apontar tanto para o backend rodando localmente em sua máquina, quanto para as API's já publicadas nos requisitos anteriores.
 
 O que será testado:
-  - Se ao visitar sua página no Heroku, o botão de mudar de realidade existe.
-  - Se a pesquisa funciona como deveria, fazendo chamada a API externa.
-  - Se o botão de mudar de realidade funciona.
-  - Se os botões de próxima página e página anterior funcionam.  
+
+- Se ao visitar sua página no Heroku, o botão de mudar de realidade existe.
+- Se a pesquisa funciona como deveria, fazendo chamada a API externa.
+- Se o botão de mudar de realidade funciona.
+- Se os botões de próxima página e página anterior funcionam.
 
 ### Bônus
 
@@ -566,17 +571,18 @@ O que será testado:
 
 Utilize a estratégia de multi-ambientes no frontend. Para isso:
 
-   - Renomeie o *remote* atual para `development`;
+- Renomeie o _remote_ atual para `development`;
 
-   - Refaça o deploy com um item no frontend que identifique o layout como rodando em modo de "desenvolvimento". Esse tag item **deve** conter o texto "Em desenvolvimento"
+- Refaça o deploy com um item no frontend que identifique o layout como rodando em modo de "desenvolvimento". Esse tag item **deve** conter o texto "Em desenvolvimento"
 
-   - Crie um novo app no Heroku cujo nome deve ser seu nome de usuário do github seguido de "-pd". Por exemplo, se o seu usuário do github for "student", o nome do seu app será "student-pd" e a url ***precisar ser*** https://student-pd.Herokuapp.com/.
+- Crie um novo app no Heroku cujo nome deve ser seu nome de usuário do github seguido de "-pd". Por exemplo, se o seu usuário do github for "student", o nome do seu app será "student-pd" e a url **_precisar ser_** https://student-pd.Herokuapp.com/.
 
-   - Lembre-se que a boa prática para essa situação é criar uma variável de ambiente para controlar esse comportamento, configurando-a para ter um valor diferente em cada um dos ambientes.
+- Lembre-se que a boa prática para essa situação é criar uma variável de ambiente para controlar esse comportamento, configurando-a para ter um valor diferente em cada um dos ambientes.
 
 O que será testado:
- - Se ao acessar o frontend de desenvolvimento, haverá a tag com o texto "Em desenvolvimento"
- - Se ao acessar o frontend de produção, não haverá a tag.
+
+- Se ao acessar o frontend de desenvolvimento, haverá a tag com o texto "Em desenvolvimento"
+- Se ao acessar o frontend de produção, não haverá a tag.
 
 ---
 
@@ -584,13 +590,13 @@ O que será testado:
 
 Para sinalizar que o seu projeto está pronto para o _"Code Review"_ de colegas, faça o seguinte:
 
-* Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque as pessoas de quem quer receber o review:
+- Vá até a página **DO SEU** _Pull Request_, adicione a label de _"code-review"_ e marque as pessoas de quem quer receber o review:
 
-  * No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
+  - No menu à direita, clique no _link_ **"Labels"** e escolha a _label_ **code-review**;
 
-  * No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
+  - No menu à direita, clique no _link_ **"Assignees"** e escolha **o seu usuário**;
 
-  * No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-0x`.
+  - No menu à direita, clique no _link_ **"Reviewers"** e digite `students`, selecione o time `tryber/students-sd-014-b`.
 
 Caso tenha alguma dúvida, [aqui tem um video explicativo](https://vimeo.com/362189205).
 
